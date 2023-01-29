@@ -1,0 +1,32 @@
+GET http://localhost:3000/api/nombre HTTP/1.1
+
+
+###
+GET http://localhost:3000/api/nombre/6 HTTP/1.1
+
+
+###
+POST http://localhost:3000/api/nombre HTTP/1.1
+Content-Type: application/json
+
+{
+    "nombre": "Arturo", 
+    "apellidoPat": "Montalvo",
+    "apellidoMat": "Reyes",
+    "fechaNac" : "1990-10-31"
+}
+
+###
+PUT http://localhost:3000/api/nombre/4 HTTP/1.1
+Content-Type: application/json
+
+{
+    "nombre": "Agustino", 
+    "apellidoPat": "Melgarejo",
+    "apellidoMat": "HeroeNo",
+    "fechaNac" : "1985-12-31"
+}
+
+
+###
+DELETE http://localhost:3000/api/nombre/6 HTTP/1.1
